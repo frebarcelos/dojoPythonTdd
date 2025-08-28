@@ -1,8 +1,14 @@
 from fizzbuzz.core import fizzbuzz
+import unittest 
 
-def test_deve_retornar_fizz_para_3():
-    """
-    Testa se a função retorna 'Fizz' para 3.
-    """
-    assert fizzbuzz(3) == "Fizz"
-    
+
+class TesteMatematica(unittest.TestCase):
+
+    def test_soma_passando(self):  
+        resposta = [1,2,'fizz']  
+        self.assertEqual(fizzbuzz(3), resposta)    
+
+
+if __name__ == "__main__":
+    unittest.main()
+

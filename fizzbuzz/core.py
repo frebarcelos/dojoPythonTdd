@@ -1,2 +1,2 @@
 def fizzbuzz(numero):
-    return "Fizz"
+    return 
